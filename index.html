@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nathan</title>
+    <link rel="stylesheet" href="index.css">
+   
+ 
+  
+  
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main-container">
+        <nav class="nav">
+            <img src="Imagesfolder/logo.jpeg" class="logo" alt="">
+         
+                <a href="#">Home</a>
+                <a href="#">Contacts</a>
+                <a href="#">Friends</a>
+                <a href="#">My story</a>
+                <a href="#">My Gallery</a>
+          <span class="more">&backcong;</span>
+        </nav>
+        <div class="sidenav">
+            <span class="close">&times;</span>
+
+                <a href="#">Home</a>
+                <a href="#">Contacts</a>
+                <a href="#">Friends</a>
+                <a href="#">My story</a>
+                <a href="#">My Gallery</a>
+ 
+        </div>
+        <div class="bgimg">
+            <div class="mytext">
+                I am Nathan Sikalo. A Jkuat Computer Technology Student and a pro dancer
+            </div>
+            
+            <img src="Imagesfolder/Nathan1.jpg" alt="">
+        </div>
+        <!-- <div class="infos">
+            <div class="info">
+                <span class="header">My Story</span>
+    
+            </div>
+            <div class="info">
+                <span class="header">My Story</span>
+    
+            </div>
+            <div class="info">
+                <span class="header">My Story</span>
+    
+            </div> -->
+           
+        </div>
+
+        
+      </div>
+      <script>
+        let more = document.querySelector(".more");
+let sidenav = document.querySelector(".sidenav");
+let close = document.querySelector(".close");
+let nav = document.querySelector(".nav");
+let bg= document.querySelector(".bgimg");
+more.addEventListener('click', showNav);
+close.addEventListener('click',hideNav);
+var visible = 0;
+// function toggleNav(){
+//     if (!visible) {
+//         visible = true;
+//         sidenav.style.display = 'flex';
+//     }
+//     if (visible) {
+//         visible = false;
+//         sidenav.style.display = 'none';
+//     }
+// }
+function showNav() {
+    // alert(document.body.clientWidth)
+
+    sidenav.style.display = 'flex';
+    more.style.opacity = 0;
+    bg.style.display = 'none';
+    // more.style.display = 'none';
+    // sidenav.style.transition = "all 2s"
+
+
+    
+
+
+
+}
+function hideNav() {
+
+    sidenav.style.display = 'none';
+    // more.style.display = 'flex';
+     more.style.opacity = 1;
+     bg.style.display = 'flex';
+
+
+
+}
+
+      </script>
+    </body>
+
+</html>
